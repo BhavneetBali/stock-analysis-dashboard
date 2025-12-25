@@ -1,29 +1,35 @@
-# Stock Analysis Web App
+# Stock Analysis Dashboard
 
-A Python-based equity analysis dashboard that computes risk-adjusted
-performance metrics and visualizes stock price behavior.
+A Python-based equity analysis web application that evaluates stock
+performance relative to market benchmarks using risk-adjusted metrics.
 
 ## Features
-- Live market data using yfinance
-- CAGR, Volatility, Sharpe Ratio, Max Drawdown
-- Interactive web interface using Streamlit
-- Supports MultiIndex price data
+- Stock selection with autocomplete dropdown
+- Benchmark comparison (NIFTY 50 / S&P 500)
+- CAGR, Volatility, Sharpe Ratio
+- Max Drawdown and Drawdown Duration
+- Normalized stock vs benchmark performance
+- Clean dashboard + advanced risk view
+
+## Methodology
+This project follows a **research-to-production workflow**:
+financial logic was first validated in Jupyter notebooks and then
+modularized into a production-ready Streamlit application.
 
 ## Tech Stack
 - Python
 - pandas, numpy
-- Streamlit
 - yfinance
+- Streamlit
+- matplotlib
 
-## How to Run
-From inside `stock_analysis_app/`:
-
+## Run Locally
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
 
 ## Motivation
-This project follows a research-to-production workflow:
-financial logic was validated in Jupyter notebooks before
-being modularized and deployed as a Python web application.
+Built to demonstrate financial intuition, downside risk analysis,
+and clean analytics-to-product design.
 
