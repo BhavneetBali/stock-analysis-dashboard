@@ -1,4 +1,4 @@
-# Stock Analysis Dashboard
+# Equity Risk & Performance Dashboard
 
 A Python-based equity analysis web application that evaluates stock
 performance relative to market benchmarks using risk-adjusted metrics.
